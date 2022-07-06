@@ -1,0 +1,45 @@
+body
+{
+    background-color: wheat;
+    text-align: center;
+    font-family: cursive;
+}
+
+.title
+{
+    font-size: 20pt;
+    font-weight: 300;
+}
+
+.playbtn
+{
+    font-size: 17.5pt;
+    background-color: green;
+    color: whitesmoke;
+    border: ridge orange;
+    width: 10vw;
+}
+
+.playbtn:not(:first-child)
+{
+    margin-left: 4rem;
+}
+
+.playbtn:hover
+{
+    background-color: orangered;
+    border: ridge green;
+    cursor: pointer;
+}
+
+.score
+{
+    font-size: 15pt;
+    display: inline-block;
+    margin: 0 3rem;
+}
+
+.win
+{
+    font-size: 25pt;
+}

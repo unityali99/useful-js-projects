@@ -1,0 +1,1 @@
+https://newsapi.org/v2/everything?q=Apple&from=2021-08-23&sortBy=popularity&apiKey=2f7c83c82a03499a873c4edfed109f85

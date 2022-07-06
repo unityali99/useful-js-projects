@@ -1,0 +1,52 @@
+body
+{
+    text-align: center;
+    font-family: cursive;
+    background-color: paleturquoise;
+}
+
+.title
+{
+    font-size: 25pt;
+}
+
+.text
+{
+    font-size: 18pt;
+}
+
+.count
+{
+    font-size: 27pt;
+}
+
+.btnstart,.btnpause,.btnreset
+{
+    font-size: 20pt;
+    width: 10rem;
+    border: 1px solid black;
+}
+
+.btnstart
+{
+    background-color: green;
+    color: white;
+}
+
+.btnpause
+{
+    background-color: orange;
+    color: white;
+}
+
+.btnreset
+{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.btnstart:hover,.btnpause:hover,.btnreset:hover
+{
+    box-shadow: 2px 2px 3px gray;
+}
+
