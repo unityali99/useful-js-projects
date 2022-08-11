@@ -18,6 +18,11 @@ function HtmlSelectElement(initItems = []) {
   this.removeItem = (val) => {
     this.items.splice(this.items.pop(val));
   };
+  this.render = () => {
+    return `<select>${this.items.map(
+      (value) => `<option>${value}</option>`
+    )}</select>`;
+  };
 }
 
 Object.assign(HtmlSelectElement.prototype, new HtmlElement());
