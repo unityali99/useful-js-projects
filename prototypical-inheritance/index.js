@@ -2,21 +2,22 @@ const focusOnElement = () => {
   console.log("focus");
 };
 
-function HtmlElement() {}
+function HtmlElement() {
+  this.click = () => {
+    console.log("click");
+  };
+}
 
 Object.assign(HtmlElement.prototype, { focusOnElement });
 
-const myElement = new HtmlElement();
+function HtmlSelectElement(initItems = []) {
+  this.items = initItems;
+  this.addItem = (val) => {
+    this.items.push(val);
+  };
+  this.removeItem = (val) => {
+    this.items.splice(this.items.pop(val));
+  };
+}
 
-myElement.click = () => {
-  console.log("click");
-};
-
-myElement.focusOnElement();
-
-function HtmlSelectElement() {}
-
-const selectElement = Object.create(myElement);
-
-selectElement.focusOnElement();
-selectElement.click();
+Object.assign(HtmlSelectElement.prototype, new HtmlElement());
