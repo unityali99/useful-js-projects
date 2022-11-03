@@ -1,5 +1,5 @@
 {
-  "name": "js-cookies",
+  "name": "js-localstorage",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ali Ahmadi",
-  "license": "ISC",
-  "dependencies": {
-    "js-cookie": "^3.0.1"
-  }
+  "license": "ISC"
 }
